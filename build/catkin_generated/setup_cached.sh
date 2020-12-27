@@ -9,5 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/husarion/slam2/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/husarion/slam2/devel/lib:$LD_LIBRARY_PATH"
+export PATH='/opt/ros/melodic/bin:/home/husarion/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+export PKG_CONFIG_PATH="/home/husarion/slam2/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/husarion/slam2/build'
 export ROS_PACKAGE_PATH="/home/husarion/slam2/src:$ROS_PACKAGE_PATH"

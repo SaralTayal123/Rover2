@@ -117,6 +117,13 @@
 /home/husarion/slam2/build/gbot_core/CMakeFiles/visualization_msgs_generate_messages_eus.dir
 /home/husarion/slam2/build/gbot_core/CMakeFiles/tf_generate_messages_py.dir
 /home/husarion/slam2/build/gbot_core/CMakeFiles/test.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/install/strip.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/edit_cache.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/rebuild_cache.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/list_install_components.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/install.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/test.dir
+/home/husarion/slam2/build/roboclaw/CMakeFiles/install/local.dir
 /home/husarion/slam2/build/ydlidar/CMakeFiles/install.dir
 /home/husarion/slam2/build/ydlidar/CMakeFiles/install/strip.dir
 /home/husarion/slam2/build/ydlidar/CMakeFiles/ydlidar_client.dir

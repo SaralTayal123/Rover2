@@ -2897,6 +2897,24 @@ clean: gbot_core/CMakeFiles/tf_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory roboclaw
+
+# Convenience name for "all" pass in the directory.
+roboclaw/all:
+
+.PHONY : roboclaw/all
+
+# Convenience name for "clean" pass in the directory.
+roboclaw/clean:
+
+.PHONY : roboclaw/clean
+
+# Convenience name for "preinstall" pass in the directory.
+roboclaw/preinstall:
+
+.PHONY : roboclaw/preinstall
+
+#=============================================================================
 # Directory level rules for directory ydlidar
 
 # Convenience name for "all" pass in the directory.

@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/opt/ros/melodic/lib;/home/husarion/slam/install_isolated/lib")
+set(ORDERED_PATHS "/home/husarion/slam/install_isolated/lib;/opt/ros/melodic/lib")

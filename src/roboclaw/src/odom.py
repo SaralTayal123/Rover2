@@ -118,7 +118,7 @@ while not rospy.is_shutdown():
     odom.pose.pose = Pose(Point(x, y, 0.), Quaternion(*odom_quat))
 
     # set the velocity
-    odom.child_frame_id = "base_link"
+    odom.child_frame_id = "base_footprint"
     odom.twist.twist = Twist(Vector3(vx, vy, 0), Vector3(0, 0, vth))
 
     # publish the message

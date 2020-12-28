@@ -1,2 +1,2 @@
-gbot_core:roboclaw:ydlidar
+gbot_core:roboclaw:rover2_2dnav:ydlidar
 -DCATKIN_DEVEL_PREFIX=/home/husarion/slam2/devel -DCMAKE_INSTALL_PREFIX=/home/husarion/slam2/install -G Unix Makefiles

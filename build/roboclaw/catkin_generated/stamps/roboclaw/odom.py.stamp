@@ -5,7 +5,8 @@
 # Calculate Odom information for differential drive 
 # https://www.cs.cmu.edu/~16311/s07/labs/NXTLabs/Lab%203.html
 
-from roboclaw import RoboClaw
+from roboclaw import Roboclaw
+import math
 
 import rospy
 import tf
@@ -42,8 +43,8 @@ roboclaw.Open()
 roboclaw.ResetEncoders(address)
 #
 
-old_encoder_1 = roboclaw.ReadEncM1(address)
-old_encoder_2 = roboclaw.ReadEncM2(address)
+_, old_encoder_1, _ = roboclaw.ReadEncM1(address)
+_, old_encoder_2, _ = roboclaw.ReadEncM2(address)
 
 while not rospy.is_shutdown():
     current_time = rospy.Time.now()
@@ -51,8 +52,8 @@ while not rospy.is_shutdown():
     # TODO experiment with roboclaw native speed calcualtion
     # Going to do manual for now for consistancy. 
 
-    encoder_1 = roboclaw.ReadEncM1(address)
-    encoder_2 = roboclaw.ReadEncM2(address)
+    _, encoder_1, _ = roboclaw.ReadEncM1(address)
+    _, encoder_2, _ = roboclaw.ReadEncM2(address)
 
     dt = (current_time - last_time).to_sec()
     
@@ -66,38 +67,38 @@ while not rospy.is_shutdown():
 
 
     ###
-    k00 = v * cos(theta)
-    k01 = v * sin(theta)
+    k00 = velocity * math.cos(th)
+    k01 = velocity * math.sin(th)
     k02 = omega
 
-    k10 = v * cos(theta + ((t/2) * k02))
-    k11 = v * sin(theta + ((t/2) * k02))
+    k10 = velocity * math.cos(th + ((dt/2) * k02))
+    k11 = velocity * math.sin(th + ((dt/2) * k02))
     k12 = omega
 
-    k20 = v * cos(theta + ((t/2) * k12))
-    k20 = v * sin(theta + ((t/2) * k12))
+    k20 = velocity * math.cos(th + ((dt/2) * k12))
+    k21 = velocity * math.sin(th + ((dt/2) * k12))
     k22 = omega 
 
-    k30 = v * cos(theta + ((t/2) * k22))
-    k30 = v * sin(theta + ((t/2) * k22))
+    k30 = velocity * math.cos(th + ((dt/2) * k22))
+    k31 = velocity * math.sin(th + ((dt/2) * k22))
     k32 = omega 
 
-    delta_x = (t/6) * (k00 + (2*(k10 + k20)) + k30)
-    delta_y = (t/6) * (k01 + (2*(k11 + k21)) + k31)
-    delta_theta = t * omega
+    delta_x = (dt/6) * (k00 + (2*(k10 + k20)) + k30)
+    delta_y = (dt/6) * (k01 + (2*(k11 + k21)) + k31)
+    delta_th = dt * omega
 
     vx = delta_x/dt
     vy = delta_y/dt
-    vth = delta_theta/dt
+    vth = delta_th/dt
 
     ###
 
     x = x + delta_x
     y = y + delta_y
-    theta = theta + delta_theta 
+    th = th + delta_th 
     
     # since all odometry is 6DOF we'll need a quaternion created from yaw
-    odom_quat = tf.transformations.quaternion_from_euler(0, 0, theta)
+    odom_quat = tf.transformations.quaternion_from_euler(0, 0, th)
 
     # first, we'll publish the transform over tf
     odom_broadcaster.sendTransform(
@@ -117,7 +118,7 @@ while not rospy.is_shutdown():
     odom.pose.pose = Pose(Point(x, y, 0.), Quaternion(*odom_quat))
 
     # set the velocity
-    odom.child_frame_id = "base_link"
+    odom.child_frame_id = "base_footprint"
     odom.twist.twist = Twist(Vector3(vx, vy, 0), Vector3(0, 0, vth))
 
     # publish the message
@@ -125,3 +126,6 @@ while not rospy.is_shutdown():
 
     last_time = current_time
     r.sleep()
+
+    old_encoder_1 = encoder_1
+    old_encoder_2 = encoder_2

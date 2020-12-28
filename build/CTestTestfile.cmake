@@ -7,4 +7,5 @@
 subdirs("gtest")
 subdirs("gbot_core")
 subdirs("roboclaw")
+subdirs("rover2_2dnav")
 subdirs("ydlidar")

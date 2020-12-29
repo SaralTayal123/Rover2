@@ -5,7 +5,9 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("diff_drive")
 subdirs("gbot_core")
 subdirs("roboclaw")
+subdirs("robot_pose_publisher")
 subdirs("rover2_2dnav")
 subdirs("ydlidar")

@@ -968,6 +968,9 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Path to a file.
+_path_name:FILEPATH=/home/husarion/slam2/src/diff_drive/tests
+
 //The directory containing a CMake configuration file for absl.
 absl_DIR:PATH=/usr/local/lib/cmake/absl
 
@@ -997,6 +1000,12 @@ cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=cv_bridge_DIR-NOTFOUND
+
+//Value Computed by CMake
+diff_drive_BINARY_DIR:STATIC=/home/husarion/slam2/build/diff_drive
+
+//Value Computed by CMake
+diff_drive_SOURCE_DIR:STATIC=/home/husarion/slam2/src/diff_drive
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
@@ -1226,6 +1235,12 @@ roboclaw_BINARY_DIR:STATIC=/home/husarion/slam2/build/roboclaw
 //Value Computed by CMake
 roboclaw_SOURCE_DIR:STATIC=/home/husarion/slam2/src/roboclaw
 
+//Value Computed by CMake
+robot_pose_publisher_BINARY_DIR:STATIC=/home/husarion/slam2/build/robot_pose_publisher
+
+//Value Computed by CMake
+robot_pose_publisher_SOURCE_DIR:STATIC=/home/husarion/slam2/src/robot_pose_publisher
+
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/melodic/share/rosbag/cmake
 
@@ -1264,6 +1279,9 @@ rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
+
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/melodic/share/rostest/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
@@ -1460,7 +1478,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

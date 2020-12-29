@@ -6,21 +6,21 @@ Updated version of my personal assistant robot. This time with ROS, and a slew o
 
 
 ### Setup Requirements:
-Raspberry Pi running ROS Melodic. I used the prebuilt image from: https://husarion.com/downloads/
-Build Cartographer from source: https://google-cartographer-ros.readthedocs.io/en/latest/compilation.html
-Before running the final make command, refer to this link to fix mapping: https://github.com/cartographer-project/cartographer/issues/1498
-git clone this project.
-run through the YDLidar setup (TODO: link)
-`cd Rover2`
-`catkin_make` (Only needs to be done the first time)
-`chmod +x ./launch.sh` (Permissions for the custom launch script. Only needs to be done the first time)
+* Raspberry Pi running ROS Melodic. I used the prebuilt image from: https://husarion.com/downloads/  
+* Build Cartographer from source: https://google-cartographer-ros.readthedocs.io/en/latest/compilation.html  
+* Before running the final make command, refer to this link to fix mapping: https://github.com/cartographer-project/cartographer/issues/1498  
+* git clone this project  
+* run through the YDLidar setup (TODO: link)  
+* `cd Rover2`  
+* `catkin_make` (Only needs to be done the first time)  
+* `chmod +x ./launch.sh` (Permissions for the custom launch script. Only needs to be done the first time)  
 
 ### Credits:
-Husarion for the prebuilt image
-Gbot for the cartographer integration template
-Differential drive stuff
+* Husarion for the prebuilt image
+* Gbot for the cartographer integration template
+* Differential drive stuff
 
-### Working list of tweaks to document in final readme:
+### Working list of tweaks to document in final ReadMe:
 1. Wack ydlidar tf tree and how I fixed that
 2. Really absurd bug in the ydlidar driver where the `/scan` messages' second's field uses nanoseconds instead of seconds (TODO: link fix)
 3. Cartographer's probability rating for maps is great but doesn't play well with ros_navigation. Fix through change in driver before building from source

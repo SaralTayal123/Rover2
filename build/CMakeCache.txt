@@ -1295,6 +1295,12 @@ rover2_2dnav_SOURCE_DIR:STATIC=/home/husarion/slam2/src/rover2_2dnav
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
+//Value Computed by CMake
+slam_BINARY_DIR:STATIC=/home/husarion/slam2/build/slam
+
+//Value Computed by CMake
+slam_SOURCE_DIR:STATIC=/home/husarion/slam2/src/slam
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 

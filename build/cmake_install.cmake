@@ -132,7 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/husarion/slam2/build/gtest/cmake_install.cmake")
   include("/home/husarion/slam2/build/diff_drive/cmake_install.cmake")
-  include("/home/husarion/slam2/build/gbot_core/cmake_install.cmake")
+  include("/home/husarion/slam2/build/slam/cmake_install.cmake")
   include("/home/husarion/slam2/build/roboclaw/cmake_install.cmake")
   include("/home/husarion/slam2/build/robot_pose_publisher/cmake_install.cmake")
   include("/home/husarion/slam2/build/rover2_2dnav/cmake_install.cmake")

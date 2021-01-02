@@ -10,7 +10,7 @@ Updated version of my personal assistant robot. This time with ROS, and a slew o
 * Build Cartographer from source: https://google-cartographer-ros.readthedocs.io/en/latest/compilation.html  
 * Before running the final make command, refer to this link to fix mapping: https://github.com/cartographer-project/cartographer/issues/1498  
 * git clone this project  
-* run through the YDLidar setup (TODO: link)  
+* run through the YDLidar setup (https://github.com/EAIBOT/ydlidar)  
 * `cd Rover2`  
 * `catkin_make` (Only needs to be done the first time)  
 * `chmod +x ./launch.sh` (Permissions for the custom launch script. Only needs to be done the first time)  

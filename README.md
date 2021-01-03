@@ -16,7 +16,7 @@ Updated version of my personal assistant robot. This time with ROS, and a slew o
 * `chmod +x ./launch.sh` (Permissions for the custom launch script. Only needs to be done the first time)  
 
 ### Credits:
-* Husarion for the prebuilt image
+* Ubiquity for prebuilt image
 * Gbot for the cartographer integration template
 * Differential drive stuff
 

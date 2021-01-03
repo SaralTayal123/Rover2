@@ -27,3 +27,8 @@ Updated version of my personal assistant robot. This time with ROS, and a slew o
 4. How to setup custom RViz windows (to visualise paths/costmaps)
 5. Issues with AMCL- YOLO and use hack-y localisation from SLAM to generate `robot_pose` msg
 6. Ros_navigation doesn't play well with dynamic maps. They want static maps after SLAM is done. That's boring. Fix by using sliding windows on global cost map centered at /odom. Fix local mapping by switching to teb_local_planner
+7. Install xterm (for tabs)
+8. How to modify launch script
+9. Remove devel and build folder
+10. Source cartographer after install if you want your catkin_make to work
+11. sudo apt-get install teb...

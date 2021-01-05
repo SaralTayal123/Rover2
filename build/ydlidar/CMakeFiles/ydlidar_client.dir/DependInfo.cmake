@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/husarion/slam2/src/ydlidar/src/ydlidar_client.cpp" "/home/husarion/slam2/build/ydlidar/CMakeFiles/ydlidar_client.dir/src/ydlidar_client.cpp.o"
+  "/home/ubuntu/Rover2/src/ydlidar/src/ydlidar_client.cpp" "/home/ubuntu/Rover2/build/ydlidar/CMakeFiles/ydlidar_client.dir/src/ydlidar_client.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,11 +17,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/ros/melodic/include"
-  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/husarion/slam2/src/ydlidar/src"
-  "/home/husarion/slam2/src/ydlidar/sdk/include"
-  "/home/husarion/slam2/src/ydlidar/sdk/src"
+  "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/home/ubuntu/Rover2/src/ydlidar/src"
+  "/home/ubuntu/Rover2/src/ydlidar/sdk/include"
+  "/home/ubuntu/Rover2/src/ydlidar/sdk/src"
   )
 
 # Targets to which this target links.

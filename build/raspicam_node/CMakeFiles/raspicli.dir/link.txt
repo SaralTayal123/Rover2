@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/ubuntu/Rover2/devel/lib/libraspicli.a  CMakeFiles/raspicli.dir/src/RaspiCLI.c.o
+/usr/bin/ranlib /home/ubuntu/Rover2/devel/lib/libraspicli.a

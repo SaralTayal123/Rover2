@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ydlidar_client.dir/src/ydlidar_client.cpp.o"
-  "/home/husarion/slam2/devel/lib/ydlidar/ydlidar_client.pdb"
-  "/home/husarion/slam2/devel/lib/ydlidar/ydlidar_client"
+  "/home/ubuntu/Rover2/devel/lib/ydlidar/ydlidar_client.pdb"
+  "/home/ubuntu/Rover2/devel/lib/ydlidar/ydlidar_client"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/husarion/slam2/src/roboclaw
+# Install script for directory: /home/ubuntu/Rover2/src/roboclaw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/husarion/slam2/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Rover2/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,31 +32,26 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/Rover2/build/roboclaw/catkin_generated/installspace/roboclaw.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/husarion/slam2/build/roboclaw/catkin_generated/installspace/roboclaw.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboclaw/cmake" TYPE FILE FILES
-    "/home/husarion/slam2/build/roboclaw/catkin_generated/installspace/roboclawConfig.cmake"
-    "/home/husarion/slam2/build/roboclaw/catkin_generated/installspace/roboclawConfig-version.cmake"
+    "/home/ubuntu/Rover2/build/roboclaw/catkin_generated/installspace/roboclawConfig.cmake"
+    "/home/ubuntu/Rover2/build/roboclaw/catkin_generated/installspace/roboclawConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboclaw" TYPE FILE FILES "/home/husarion/slam2/src/roboclaw/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roboclaw" TYPE FILE FILES "/home/ubuntu/Rover2/src/roboclaw/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/roboclaw" TYPE PROGRAM FILES "/home/husarion/slam2/build/roboclaw/catkin_generated/installspace/odom.py")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/roboclaw" TYPE PROGRAM FILES "/home/ubuntu/Rover2/build/roboclaw/catkin_generated/installspace/odom.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/roboclaw" TYPE PROGRAM FILES "/home/husarion/slam2/build/roboclaw/catkin_generated/installspace/roboclaw.py")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/roboclaw" TYPE PROGRAM FILES "/home/ubuntu/Rover2/build/roboclaw/catkin_generated/installspace/roboclaw.py")
 endif()
 

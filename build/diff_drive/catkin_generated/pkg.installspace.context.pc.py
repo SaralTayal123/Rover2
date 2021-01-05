@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "actionlib_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "diff_drive"
-PROJECT_SPACE_DIR = "/home/husarion/slam2/install"
+PROJECT_SPACE_DIR = "/home/ubuntu/Rover2/install"
 PROJECT_VERSION = "1.0.0"

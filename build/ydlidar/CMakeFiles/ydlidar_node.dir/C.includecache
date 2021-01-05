@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/husarion/slam2/src/ydlidar/sdk/include/lock.h
+/home/ubuntu/Rover2/src/ydlidar/sdk/include/lock.h
 sys/file.h
 -
 sys/socket.h
@@ -46,9 +46,9 @@ math.h
 lockdev.h
 -
 
-/home/husarion/slam2/src/ydlidar/sdk/src/lock.c
+/home/ubuntu/Rover2/src/ydlidar/sdk/src/lock.c
 lock.h
-/home/husarion/slam2/src/ydlidar/sdk/src/lock.h
+/home/ubuntu/Rover2/src/ydlidar/sdk/src/lock.h
 stdio.h
 -
 unistd.h

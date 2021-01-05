@@ -1,15 +1,15 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ydlidar_node.dir/src/ydlidar_node.cpp.o"
+  "CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_timer.cpp.o"
   "CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/list_ports_linux.cpp.o"
   "CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_serial.cpp.o"
-  "CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_timer.cpp.o"
-  "CMakeFiles/ydlidar_node.dir/sdk/src/CYdLidar.cpp.o"
-  "CMakeFiles/ydlidar_node.dir/sdk/src/Console.cpp.o"
   "CMakeFiles/ydlidar_node.dir/sdk/src/serial.cpp.o"
+  "CMakeFiles/ydlidar_node.dir/sdk/src/CYdLidar.cpp.o"
   "CMakeFiles/ydlidar_node.dir/sdk/src/ydlidar_driver.cpp.o"
+  "CMakeFiles/ydlidar_node.dir/sdk/src/Console.cpp.o"
   "CMakeFiles/ydlidar_node.dir/sdk/src/lock.c.o"
-  "/home/husarion/slam2/devel/lib/ydlidar/ydlidar_node.pdb"
-  "/home/husarion/slam2/devel/lib/ydlidar/ydlidar_node"
+  "/home/ubuntu/Rover2/devel/lib/ydlidar/ydlidar_node.pdb"
+  "/home/ubuntu/Rover2/devel/lib/ydlidar/ydlidar_node"
 )
 
 # Per-language clean rules from dependency scanning.

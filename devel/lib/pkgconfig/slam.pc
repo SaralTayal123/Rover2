@@ -1,4 +1,4 @@
-prefix=/home/husarion/slam2/devel
+prefix=/home/ubuntu/Rover2/devel
 
 Name: slam
 Description: Description of slam

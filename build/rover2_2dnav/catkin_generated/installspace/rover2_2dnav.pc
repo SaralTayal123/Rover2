@@ -1,4 +1,4 @@
-prefix=/home/husarion/slam2/install
+prefix=/home/ubuntu/Rover2/install
 
 Name: rover2_2dnav
 Description: Description of rover2_2dnav

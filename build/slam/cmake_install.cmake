@@ -1,8 +1,8 @@
-# Install script for directory: /home/husarion/slam2/src/slam
+# Install script for directory: /home/ubuntu/Rover2/src/slam
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/husarion/slam2/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Rover2/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,36 +32,31 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/Rover2/build/slam/catkin_generated/installspace/slam.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/husarion/slam2/build/slam/catkin_generated/installspace/slam.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slam/cmake" TYPE FILE FILES
-    "/home/husarion/slam2/build/slam/catkin_generated/installspace/slamConfig.cmake"
-    "/home/husarion/slam2/build/slam/catkin_generated/installspace/slamConfig-version.cmake"
+    "/home/ubuntu/Rover2/build/slam/catkin_generated/installspace/slamConfig.cmake"
+    "/home/ubuntu/Rover2/build/slam/catkin_generated/installspace/slamConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slam" TYPE FILE FILES "/home/husarion/slam2/src/slam/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slam" TYPE FILE FILES "/home/ubuntu/Rover2/src/slam/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/slam" TYPE DIRECTORY FILES
-    "/home/husarion/slam2/src/slam/launch"
-    "/home/husarion/slam2/src/slam/configuration_files"
-    "/home/husarion/slam2/src/slam/param"
-    "/home/husarion/slam2/src/slam/urdf"
+    "/home/ubuntu/Rover2/src/slam/launch"
+    "/home/ubuntu/Rover2/src/slam/configuration_files"
+    "/home/ubuntu/Rover2/src/slam/param"
+    "/home/ubuntu/Rover2/src/slam/urdf"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/slam" TYPE DIRECTORY FILES "/home/husarion/slam2/src/slam/include/slam/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/slam" TYPE DIRECTORY FILES "/home/ubuntu/Rover2/src/slam/include/slam/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

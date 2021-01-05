@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/Rover2/devel
+
+Name: raspicam_node
+Description: Description of raspicam_node
+Version: 1.0.1
+Cflags: -I/home/ubuntu/Rover2/devel/include -I/home/ubuntu/Rover2/src/raspicam_node/include
+Libs: -L${prefix}/lib 
+Requires: 

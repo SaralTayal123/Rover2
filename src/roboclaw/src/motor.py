@@ -22,20 +22,54 @@ roboclaw.ResetEncoders(address)
 
 left_motor_speed = 0
 right_motor_speed = 0
+left_data = False
+right_data = False
+
+    
+def update_motor():
+    global left_data
+    global right_data
+    global left_motor_speed
+    global right_motor_speed
+    if(right_data and left_data):
+
+    	if (left_motor_speed < 64): left_motor_speed -= 10
+    	elif (left_motor_speed  > 64): left_motor_speed += 10
+
+    	if (right_motor_speed < 64): right_motor_speed -= 10
+    	elif (right_motor_speed  > 64): right_motor_speed += 10
+
+    	roboclaw.ForwardBackwardM2(address,left_motor_speed)
+    	roboclaw.ForwardBackwardM1(address,right_motor_speed)
+    	print("right ", right_motor_speed, "left " , left_motor_speed)
+	right_data = False
+	left_data = False
+	
+
 
 def callback_left(data):
-    left_motor_speed = int(data.data)
-    left_motor_speed = left_motor_speed * 20/3000
+    global left_data
+    global right_data
+    global left_motor_speed
+    global right_motor_speed
+    left_motor_speed = (-1* int(data.data)) +64 
+    left_data = True
+    update_motor()
+    #left_motor_speed = left_motor_speed * 20/3000
     # left_motor_speed += 64
-    roboclaw.ForwardM1(address,left_motor_speed)
-    print("leftMotor " , left_motor_speed)
+    #print("leftMotor " , left_motor_speed)
     print("leftMotor original" , data.data)
 def callback_right(data):
-    right_motor_speed = int(data.data)
-    right_motor_speed = right_motor_speed * 20/3000
+    global left_data
+    global right_data
+    global left_motor_speed
+    global right_motor_speed
+    right_motor_speed = (-1*int(data.data))  +64
+    right_data = True
+    update_motor()
+    #right_motor_speed = right_motor_speed * 20/3000
     # right_motor_speed += 64
-    roboclaw.ForwardM2(address,right_motor_speed)
-    print("rightMotor " , right_motor_speed)
+    #print("rightMotor " , right_motor_speed)
     print("rightMotor original" , data.data)
 
 def listener():

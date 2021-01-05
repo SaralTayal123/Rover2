@@ -67,14 +67,14 @@ set(ydlidar_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ydlidar_SOURCE_PREFIX /home/husarion/slam2/src/ydlidar)
-  set(ydlidar_DEVEL_PREFIX /home/husarion/slam2/devel)
+  set(ydlidar_SOURCE_PREFIX /home/ubuntu/Rover2/src/ydlidar)
+  set(ydlidar_DEVEL_PREFIX /home/ubuntu/Rover2/devel)
   set(ydlidar_INSTALL_PREFIX "")
   set(ydlidar_PREFIX ${ydlidar_DEVEL_PREFIX})
 else()
   set(ydlidar_SOURCE_PREFIX "")
   set(ydlidar_DEVEL_PREFIX "")
-  set(ydlidar_INSTALL_PREFIX /home/husarion/slam2/install)
+  set(ydlidar_INSTALL_PREFIX /home/ubuntu/Rover2/install)
   set(ydlidar_PREFIX ${ydlidar_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/husarion/slam2/install/lib;/home/husarion/slam/install_isolated/lib;/home/husarion/husarion_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/ubuntu/Rover2/install/lib;/home/ubuntu/carto/devel_isolated/cartographer_rviz/lib;/home/ubuntu/carto/install_isolated/lib;/home/ubuntu/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
